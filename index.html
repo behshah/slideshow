@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pasargad indonesia </title>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/screen.css">
+
+
+</head>
+
+<body>
+  <!-- WRAPPER
+  ================================= -->
+
+
+  <!-- OVERLAY
+    =============================== -->
+  <div class="overlay first"></div>
+  <div class="overlay second"></div>
+  <div class="overlay third"></div>
+
+  <!-- NAVBAR
+    =============================== -->
+
+  <nav>
+    <img  class="logo" alt="" src="./images/logo.png">
+    <!-- <h2 class="logo" > PASARGAD INDONESIA</h2> -->
+    <svg class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3" style="stroke: rgb(255, 255, 255);"></line>
+      <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" style="stroke: rgb(255, 255, 255);"></line>
+      <line y1="21.5" x2="16" y2="21.5" stroke="white" stroke-width="3" style="stroke: rgb(255, 255, 255);"></line>
+    </svg>
+    <div class="nav-open">
+
+      <div class="address" style="opacity: 0; transform: matrix(1, 0, 0, 1, 0, 0);">
+        <h3>Address</h3>
+        <h4>Jl. RS. Fatmawati Raya No.200, RT.1/RW.10, Cilandak Bar., Kec. Cilandak,
+           Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12430</h4>
+
+      </div>
+
+      <div class="contact" style="opacity: 0; transform: matrix(1, 0, 0, 1, 0, 0);">
+
+        <h3>Contact</h3>
+
+        <h4>(021) 75914641</h4>
+        <h4>0811-1510-110</h4>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <div id="wrapper" class="grid">
+
+    <!--SECTION PHOTO DISTORTION
+    ================================  -->
+      <section class="home" class="grid">
+        <div class="slider">
+          <div class="slide active" style="background-image: url('images/101.jpg');">
+            <div class="container">
+              <div class="caption">
+                <h1>Silk </h1>
+                <p>collection</p>
+                <a href="">download catalogue</a>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="slide" style="background-image: url('images/52.jpg');">
+            <div class="container">
+              <div class="caption">
+                <h1>wool</h1>
+                <p>collection</p>
+                 <a href="">download catalogue</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="slide" style="background-image: url('images/61.jpg');">
+            <div class="container">
+            <div class="caption">
+              <h1>Modern</h1>
+              <p>collection</p>
+              <a href="images/PASARGAD - MODERN CATALOGUE - PHOTOS.pdf.pdf" download="modern catalogue">download catalogue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+        <!--CONTROLS-->
+              <div class="controls">
+                <div class="prev"><</div>
+                <div class="next">></div>
+              </div>
+      <!-- INDICATORS-->
+      <div class="indicator"></div>
+      </section>
+
+
+  </div>
+
+
+  <!-- icons -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <!-- three js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js"
+    integrity="sha256-tAVw6WRAXc3td2Esrjd28l54s3P2y7CDFu1271mu5LE=" crossorigin="anonymous"></script>
+  <!--  -->
+  <!-- hover-effect js -->
+  <script src="./slide.js"></script>
+  <script src="./app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+
+
+
+  <script>
+   
+
+    
+    // NAVBAR
+    TweenMax.staggerFrom(".navbar div", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    }, 0.08);
+
+    // MEDIA
+    TweenMax.staggerFrom(".media ul li", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      x: "-20",
+      ease: Expo.easeInOut
+    }, 0.08);
+
+    // TEXT
+    TweenMax.from(".text h1 .hidetext", 1.5, {
+      delay: 1,
+      y: "100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".text h3 .hidetext", 1.5, {
+      delay: 1.2,
+      y: "100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".text p .hidetext", 1.5, {
+      delay: 1.3,
+      y: "100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".text h2", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      x: "-10000",
+      ease: Expo.easeInOut
+    });
+
+    // SPONSOR
+    TweenMax.from(".sponsor img", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".sponsor p", 1.5, {
+      delay: 1.6,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    });
+
+    // DISTORTION
+    TweenMax.from(".distortion", 1.5, {
+      delay: 2,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    });
+
+    // OVERLAY
+    TweenMax.to(".first", 1.5, {
+      delay: .5,
+      top: "-100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.to(".second", 1.5, {
+      delay: .7,
+      top: "-100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.to(".third", 1.5, {
+      delay: .9,
+      top: "-100%",
+      ease: Expo.easeInOut
+    });
+
+  </script>
+</body>
+
+</html>

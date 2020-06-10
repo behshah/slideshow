@@ -1,0 +1,225 @@
+/*  SCREEN MOOD SCREEN MOOD SCREEN MOOD SCREEN MOOD SCREEN MOOD SCREEN MOOD SCREEN MOOD 
+============================================================================================ */
+
+@media  (min-width :700px) {
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row: auto;
+  }
+
+  .nav-open {
+
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+
+  }
+
+  nav h2{
+    font-size: 1.75rem;
+  }
+
+  .contact {
+    grid-column: 1 / 5;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  .address{
+    grid-column: 1 / 5;
+    grid-row: 1/2;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+   .contact h3 ,
+   .address h3
+   {
+    cursor: pointer;
+  }
+  .contact h4,
+  .address h4,
+  .address h5
+  {
+    font-weight: 100;
+   font-size: 1rem;
+   
+  }
+
+ 
+.address h5{
+  display: inline-block;
+  font-weight: 100;
+  /* font-size: 60em; */
+}
+  /*LOGO IMAGE
+==========================*/
+.logo{
+  width:8vw;
+}
+
+nav {
+  height: 20vh;
+ }
+ .home .slide {
+  position: absolute;
+  top: 25%;
+  left:12%;
+  width: 75vw;
+  height: 70vh;
+ 
+}
+
+.home .container{
+  position: absolute;
+  top:55%;
+  left:40%;
+  /* background-color: yellow; */
+
+}
+
+.home .indicator {
+  position: absolute;
+  top:90%;
+  left:50vw;
+  // try use above value for portraite mood too 
+ 
+}
+.home .controls .prev,
+.home .controls .next {
+  
+  position: absolute;
+  top:198px;
+  height:55%;
+  width :50px;
+  line-height: 30   0px;
+  background-color: white;
+  /* opacity: .7; */
+  /* background-color: red; */
+  color:black;
+
+  
+}
+.home .controls .prev:hover,
+.home .controls .next:hover {
+
+  background-color:white;
+  opacity: .7;
+}
+.home .indicator div{
+  width:25px;
+  height: 25px;
+  line-height: 25px; 
+  font-size: 20px;
+}
+
+.home .caption h1{
+  font-size: 1.65rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.home .caption p{
+  font-size: 1.75rem;
+  color: #ffffff;
+  margin: -10px 0 8px;
+
+}
+.home .caption a{
+  font-size: small;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #222222;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+}
+
+/* LANDSCAPE LANDSCAPE LANDSCAPE LANDSCAPE LANDSCAPE LANDSCAPE LANDSCAPE LANDSCAPE LANDSCAPE
+============================================================================================ */
+@media (max-width : 700px) and ( orientation : LANDSCAPE) {
+
+ 
+  /*LOGO IMAGE
+==========================*/
+.logo{
+  width:8vw;
+}
+  /* PHOTO DISTORTION
+  ============================================================================*/
+  .home .slide {
+    position: absolute;
+    left:5%;
+    top: 25%;
+    width: 90vw;
+    height: 77vh;
+    padding:0 15px;
+    background-size: cover;
+    background-position: center;
+    z-index:1;
+    display: none;
+    animation: slide 2s ease;
+}
+
+  .container{
+    position: absolute;
+    top:0;
+    left:0;
+    max-width: 100vw;
+    margin: auto;
+    /* background-color: yellow; */
+  
+    }
+  
+  .home .container{
+    position: absolute;
+    top:40%;
+    left:35%;
+    /* background-color: yellow; */
+  
+  }
+
+.home .controls .prev,
+.home .controls .next {
+  position: absolute;
+  top: 80%;
+  height: 20px;
+  width : 20px;
+ 
+}
+
+
+
+.home .indicator {
+  position: absolute;
+  top:300px;
+  left:50%;
+ 
+}
+
+
+.home .caption h1{
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.home .caption p{
+  font-size: 1.75rem;
+  color: #ffffff;
+  margin: -10px 0 8px;
+
+}
+
+
+.home .controls .prev{
+  left: 5%;
+}
+.home .controls .next{
+  right: 5%;
+}
+
+
+
+}
+ 
